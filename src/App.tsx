@@ -15,7 +15,15 @@ export default function App() {
     const recipesRef = ref(db, 'recipes');
     onValue(recipesRef, (snapshot) => {
       const data = snapshot.val();
+      console.log("🔥 Raw Firebase data:", data);
+       if (data) {
+        Object.entries(data).forEach(([id, recipe]) => {
+          console.log("📦 Recipe ID:", id, "=>", recipe);
+    });
+   }
+
       const userRecipes = data ? Object.values(data) : [];
+      console.log("✅ Parsed recipes:", userRecipes);
       setRecipes([...knownRecipes, ...(userRecipes as Recipe[])]);
 
     });
