@@ -6,23 +6,25 @@
 
 body {
   font-family: 'Segoe UI', sans-serif;
-  background-image: url( "/design1.jpg");
-  background-size: 25%;
-  margin: 0;
+  background-color: rgba(254, 227, 117, 0.5);
   padding: 2rem;
   color: #6a4e2f;
   text-align: center;
 }
 .banner{
 margin: auto;
-background-color: rgba(254, 227, 117, 0.5);
+background-color: rgba(254, 227, 117, 0.8);
 width: 180px;
 height: 170px;
 margin-bottom: 1rem;
-border: 10px ridge;
-border-color: #6a4e2f;
+border: 12px ridge  #6a4e2f;
+box-shadow: 0 0 20px 4px rgb(53, 50, 37);
 background-size: 100px;
 border-radius: 50%;
+}
+
+.banner:hover{ 
+  transform: scale(1.1);
 }
 
 h1 {
@@ -140,8 +142,9 @@ form {
   background-image: url( "/flowers.jpg");
   background-size: cover;
   padding: 1.5rem;
-  border-radius: 10px;
-  box-shadow: 0 6px 8px rgba(0.6, 0.1, 0.1, 0.4);
+  border: 7px solid #6a4e2f;
+  border-radius: 20px;
+  box-shadow: 0 0 20px 4px rgb(53, 50, 37);
   margin: auto;
 }
 @media (max-width: 100px) {
@@ -300,7 +303,7 @@ button:hover {
 
 
 .recipe-card {
-  background: #fffdf9;
+  background-color: rgba(254, 227, 117, 0.6);
   border-radius: 10px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
   text-align: center;
@@ -310,6 +313,7 @@ button:hover {
   flex-direction: column;
   align-items: center;
   transition: box-shadow 0.3s ease;
+  border: 4px solid #6a4e2f;
 }
 
 .recipe-card img {
@@ -318,13 +322,14 @@ button:hover {
 }
 
 .recipe-card:hover {
-  box-shadow: 0 0 20px 4px gold;
+  box-shadow: 0 0 20px 4px rgb(53, 50, 37);
 }
 
 
 .recipe-card button {
   margin-top: 0.5rem;
   background: #ffb347;
+  border: 3px solid #6a4e2f;
 }
 
 .instructions {
