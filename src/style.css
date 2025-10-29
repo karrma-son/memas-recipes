@@ -173,17 +173,16 @@ form {
 input {
   margin: 1px;
   max-height: 15px;
-  width: 75px;
+  width: 175px;
   margin-bottom: 7px;
   padding: .6rem;
   font-size: 1rem;
-  border: 1px solid #ccc;
+  border: 2px solid #6a4e2f;
   border-radius: 8px;
 }
 
 input:hover {
-  border: 2px solid #6a4e2f;
-  box-shadow: 0 0 12px 2px gold;
+  box-shadow: 0 0 12px 2px rgb(53, 50, 37);
 }
 
 input[type = title] {
@@ -219,7 +218,7 @@ button
 button:hover {
   background: #b06a25;
   border: 2px solid #6a4e2f;
-  box-shadow: 0 0 12px 2px gold;
+  box-shadow: 0 0 12px 2px rgb(53, 50, 37);
 }
 /*
 .mic-wrapper {
@@ -303,7 +302,8 @@ button:hover {
 
 
 .recipe-card {
-  background-color: rgba(254, 227, 117, 0.6);
+  color: rgb(106, 78, 47, .9);
+  background-color: rgba(208, 165, 233, 0.6);
   border-radius: 10px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
   text-align: center;
@@ -316,10 +316,7 @@ button:hover {
   border: 4px solid #6a4e2f;
 }
 
-.recipe-card img {
-  max-width: 100%;
-  border-radius: 8px;
-}
+
 
 .recipe-card:hover {
   box-shadow: 0 0 20px 4px rgb(53, 50, 37);
@@ -328,8 +325,9 @@ button:hover {
 
 .recipe-card button {
   margin-top: 0.5rem;
-  background: #ffb347;
+  background: rgb(255, 179, 71, 0.6);
   border: 3px solid #6a4e2f;
+  color: rgb(45, 45, 45, .7);
 }
 
 .instructions {
